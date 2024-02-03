@@ -11,7 +11,9 @@
     <meta name="author" content="Alicia Vento>" />
 
     <!-- Bootstrap-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link 
+      href="vendor/bootstrap/css/bootstrap.min.css" 
+      rel="stylesheet" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -19,20 +21,23 @@
     />
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
-    <link rel="stylesheet" href="assets/css/carrousel.css" />
+    <link rel="stylesheet" 
+      href="assets/css/custom.css" />
+    <link rel="stylesheet" 
+      href="assets/js/custom.js" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
     <!-- Boostrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <!--  jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous"></script>
 
     <!--Fontawesome-->
     <script
@@ -49,7 +54,8 @@
           <img src="assets/img/viajes.svg" alt="Logo" width="50" height="40" class="d-inline-block me-2 mx-3">
           <span class="ms-2">Viajes Chile</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -62,19 +68,20 @@
       </div>
   </div>
 </nav>
+
 <!--Header end-->
 
     <!--carrousel-->
     <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner " style="height: 860px;">
+      <div class="carousel-inner ">
         <div class="carousel-item active">
-          <img src="assets/img/carousel1.jpg" class="d-block img-fluid" alt="...">
+          <img src="assets/img/carousel1.jpg" style="height: 760px;" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/carousel2.jpg" class="d-block img-fluid" alt="...">
+          <img src="assets/img/carousel2.jpg" style="height: 760px;" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/carousel3.jpg" class="d-block img-fluid" alt="...">
+          <img src="assets/img/carousel3.jpg" style="height: 760px;" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -87,65 +94,55 @@
       </button>
       <!--Carousel end-->
     </div>
-
-    <div id="quienes-somos" class="section quienes-somos">
-      <div class="container">
-        <div class="section-heading">
-          <h6>¿QUIENES SOMOS?</h6>
+    <!--Quienes somos-->
+    <div id="quienes-somos" class="text-center quienes-somos">
+      <h2 class="text-color fw-bolder mb-4">QUIENES SOMOS</h2>
+    
+      <div class="row align-items-start mt-3">
+        <div class="col-md-4 text-verde">
+          <i class="fa-solid fa-cloud-sun mx-2 fa-2x p-3"></i>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="section-heading">
-              <a
-                ><i class="fa-solid fa-star mx-2"></i
-                ><b>Somos una agencia de viajes </b> dedicada a ofrecer
-                experiencias únicas y memorables. Con una pasión por la aventura
-                y el descubrimiento, en Viajes Chile nos esforzamos por hacer
-                que cada viaje sea inolvidable.
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="section-heading">
-              <a>
-                <i class="fa-solid fa-plane mx-2"></i
-                ><b>Nuestro equipo está compuesto</b> por apasionados expertos
-                en viajes con años de experiencia. Trabajamos incansablemente
-                para comprender tus expectativas y personalizar cada detalle de
-                tu viaje, desde la elección del destino hasta las actividades
-                diarias.</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="section-heading">
-              <a
-                ><i class="fa-brands fa-pagelines mx-2"></i
-                ><b>En Viajes Chile,</b> nos enorgullece nuestra dedicación a la
-                calidad, autenticidad y atención al cliente. Colaboramos con
-                proveedores locales confiables y seleccionamos cuidadosamente
-                cada experiencia para garantizar que tus aventuras sean
-                excepcionales y reflejen nuestra pasión por el mundo del viaje.
-                ¡Descubre el mundo con nosotros</a
-              >
-            </div>
-          </div>
+        <div class="col-md-4 text-verde">
+          <i class="fa-solid fa-star mx-2 fa-2x p-3"></i>
+        </div>
+        <div class="col-md-4 text-verde">
+            <i class="fa-solid fa-plane mx-2 fa-2x p-3"></i>
         </div>
       </div>
-    </div>
-
-    <div class="destacados section" id="destacados">
-      <div class="container mt-2">
-        <div class="row">
-          <div class="col-lg-4 offset-lg-4">
-            <div class="section-heading text-center mt-5">
-              <h2 class="text-color fw-bolder">DESTACADOS</h2>
-            </div>
-          </div>
+      <div class="row align-items-start">
+        <div class="col-md-4">
+          <a><b>Somos una agencia de viajes </b> dedicada a ofrecer
+            experiencias únicas y memorables. Con una pasión por la aventura
+            y el descubrimiento, en Viajes Chile nos esforzamos por hacer
+            que cada viaje sea inolvidable.
+          </a>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="card" style="width: 18rem">
+        <div class="col-md-4">
+          <a><b>Somos una agencia de viajes </b> dedicada a ofrecer
+          experiencias únicas y memorables. Con una pasión por la aventura
+          y el descubrimiento, en Viajes Chile nos esforzamos por hacer
+          que cada viaje sea inolvidable.
+        </a>
+        </div>
+        <div class="col-md-4">
+          <a><b>En Viajes Chile,</b> nos enorgullece nuestra dedicación a la
+              calidad, autenticidad y atención al cliente. Colaboramos con
+              proveedores locales confiables y seleccionamos cuidadosamente
+              cada experiencia para garantizar que tus aventuras sean
+              excepcionales y reflejen nuestra pasión por el mundo del viaje.
+              ¡Descubre el mundo con nosotros</a>
+        </div>
+      </div>
+      <!--Quienes somos End-->
+    </div>
+  
+<!--Destacados-->
+    <div class="destacados section" id="destacados">
+      <div class="container mt-2 pt-3">
+        <h2 class="text-color fw-bolder text-center pb-4">DESTACADOS</h2>
+        <div class="row justify-content-center px-5">
+          <div class="col-lg-3 col-md-6 mx-auto mb-3">
+            <div class="card text-center" style="width: 18rem">
               <img
                 src="assets/img/card1.jpg"
                 class="card-img-top"
@@ -167,8 +164,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card" style="width: 18rem">
+          <div class="col-lg-3 col-md-6 mx-auto mb-3">
+            <div class="card text-center" style="width: 18rem">
               <img src="assets/img/card2.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title text-center fw-bolder text-verde">
@@ -183,8 +180,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card" style="width: 18rem">
+          <div class="col-lg-3 col-md-6 mx-auto mb-3">
+            <div class="card text-center" style="width: 18rem">
               <img src="assets/img/card3.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title text-center fw-bolder text-verde">
@@ -200,7 +197,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="card" style="width: 18rem">
+            <div class="card text-center" style="width: 18rem">
               <img src="assets/img/card4.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title text-center fw-bolder text-verde">
@@ -217,8 +214,9 @@
           </div>
         </div>
       </div>
+      <!--Destacos End-->
     </div>
-
+<!--Contacto-->
     <div class="contact section" id="contacto">
       <div class="container">
         <div class="row">
@@ -230,7 +228,6 @@
         </div>
       </div>
     </div>
-<!--Contacto-->
     <div class="contact-content">
       <div class="container">
         <div class="row">
@@ -286,11 +283,17 @@
         <p>Copyright © 2023</p>
       </div>
       <div class="col-6 col-md-4">
-        <p class="social-icons">
-          <i class="fab fa-linkedin fa-2x mx-2"></i>
-          <i class="fa-brands fa-github fa-2x mx-2"></i>
-          <i class="fa-brands fa-square-behance fa-2x mx-2"></i>
-        </p>
+        <p>
+          <a href="https://cl.linkedin.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x mx-2 text-white"></i>
+          </a>
+          <a href="https://github.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="GitHub">
+            <i class="fa-brands fa-github fa-2x mx-2 text-white"></i>
+          </a>
+          <a href="https://www.behance.net/" target="_blank" data-toggle="tooltip" data-placement="top" title="Behance">
+            <i class="fa-brands fa-square-behance fa-2x mx-2 text-white"></i>
+          </a>
+        </p> 
       </div>
     </div>
   </div>
@@ -298,8 +301,13 @@
     <!--Footer End-->
 
     <!-- Scripts -->
-
-    <!-- Bootstrap core JavaScript -->
+    <!--Tooltip-->
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+    <!-- Bootstrap & JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/isotope.min.js"></script>
@@ -311,6 +319,7 @@
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
-   
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
 </html>

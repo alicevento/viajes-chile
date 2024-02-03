@@ -169,15 +169,12 @@ img {
 }
 
 .icon-text-container i {
-  font-size: 24px; /* Ajusta el tamaño del icono según sea necesario */
+  font-size: 24px; 
 }
 
 .icon-text-container b {
-  margin: 0 10px; /* Ajusta el espacio alrededor del texto según sea necesario */
+  margin: 0 10px; /
 }
-
-
-
 
 .icon-button a {
   display: inline-block;
@@ -213,79 +210,6 @@ img {
 }
 
 
-
-
-@-webkit-keyframes dot {
-  50% {
-      -webkit-transform: translateX(96px);
-      transform: translateX(96px);
-  }
-}
-
-@keyframes dot {
-  50% {
-      -webkit-transform: translateX(96px);
-      transform: translateX(96px);
-  }
-}
-
-@-webkit-keyframes dots {
-  50% {
-      -webkit-transform: translateX(-31px);
-      transform: translateX(-31px);
-  }
-}
-
-@keyframes dots {
-  50% {
-      -webkit-transform: translateX(-31px);
-      transform: translateX(-31px);
-  }
-}
-
-.preloader-inner {
-  position: relative;
-  width: 142px;
-  height: 40px;
-  background: transparent;
-}
-
-.preloader-inner .dot {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 12px;
-  left: 15px;
-  background:#BD0004;
-  border-radius: 50%;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-animation: dot 2.8s infinite;
-  animation: dot 2.8s infinite;
-}
-
-.preloader-inner .dots {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  margin-top: 12px;
-  margin-left: 31px;
-  -webkit-animation: dots 2.8s infinite;
-  animation: dots 2.8s infinite;
-}
-
-.preloader-inner .dots span {
-  display: block;
-  float: left;
-  width: 16px;
-  height: 16px;
-  margin-left: 16px;
-  background: #f35525;
-  border-radius: 50%;
-}
-
-
-
-
 /* Banner*/
 
 .category {
@@ -318,9 +242,15 @@ img {
   margin-top: 30px;
 }
 
-.destacados {
-  background-color: #e7e6e6;
-  padding: 100px;
+@media screen and (max-width: 768px) {
+  .quienes-somos {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #carouselExample img {
+    height: auto !important;
+  }
 }
 
 .card-text{
@@ -333,11 +263,7 @@ line-height: 1.3;
 /* Contacto*/
 
 .contact {
-  background-image: url(../images/contact-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
+background-color: #f0eeee;
 }
 
 .contact .section-heading h2 {
@@ -512,37 +438,7 @@ body {
   .main-banner .item h2 {
     width: 100%;
   }
-  .featured .section-heading {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 100px;
-  }
-  .featured .accordion {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .featured .info-table {
-    margin-top: 45px;
-  }
-  .fun-facts .counter {
-    margin-bottom: 45px;
-  }
-  .properties .item h6 {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  .properties .item .main-button {
-    text-align: center;
-  }
-  .properties .item ul li {
-    margin-right: 10px;
-    font-size: 13px;
-  }
-
-  .single-property .info-table {
-    margin-left: 0px;
-    margin-top: 45px;
-  }
+ 
   .contact-page .section-heading {
     margin-right: 0px !important;
   }
@@ -559,10 +455,7 @@ body {
     margin-right: 30px; 
   }
 
-@media (max-width: 768px) {
-  .quienes-somos {
-    display: none;
-  }
+
   .contact-page .section-heading {
     margin-right: 100px;
   }
